@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Nunito+Sans:wght@400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Nunito+Sans:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Play&display=swap");
 
 .va {
   display: flex;
@@ -6,7 +7,7 @@
 }
 
 html {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   color: white;
 }
 
@@ -23,22 +24,46 @@ hr {
   background: #24272c;
 }
 
+#subtitle-1 {
+  color: #060606;
+}
+
 .hero {
   background: #060606;
-  background-image: url(/pic/beers-1283566_1280.jpg);
-  }
+  background-image: url(/eComerce_Beer_Box/public/pic/beers-1283566_1280.jpg);
+  background-size: 100% 100%;
+}
 
 .title,
 .subtitle {
   color: white;
 }
 
+.letter {
+  display: inline-block;
+  opacity: 0;
+  font-size: 150px;
+  color: #b7ccdf;
+  font-family: "Amatic SC", cursive;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 6px;
+}
+
+div {
+  display: inline-block;
+}
+
 .navbar .navbar-item {
-  color: #e4e2ff;
+  color: #89898b;
+}
+
+#space {
+  opacity: 0;
 }
 
 .navbar .navbar-item.is-active {
-  color: #e4e2ff;
+  color: #8d8d91d0;
   font-weight: 700;
 }
 
@@ -49,7 +74,12 @@ hr {
 
 .navbar .navbar-item a {
   margin-left: 1rem;
-  color: #e4e2ff;
+  color: #8a86c9;
+}
+
+.navbar-end {
+  align-items: flex-end;
+  margin-top: -50px;
 }
 
 .blog-posts {
@@ -77,9 +107,9 @@ hr {
 
 .blog-posts .post .post-excerpt {
   line-height: 1.5rem;
-  letter-spacing: .03rem;
+  letter-spacing: 0.03rem;
   font-size: 1.2rem;
-  font-family: 'IBM Plex Serif', serif;
+  font-family: "IBM Plex Serif", serif;
   color: #92a3ab;
 }
 
