@@ -30,7 +30,6 @@ hr {
 
 .hero {
   background: #060606;
-  background-image: url(/eComerce_Beer_Box/public/pic/beers-1283566_1280.jpg);
   background-size: 100% 100%;
 }
 
@@ -75,11 +74,6 @@ div {
 .navbar .navbar-item a {
   margin-left: 1rem;
   color: #8a86c9;
-}
-
-.navbar-end {
-  align-items: flex-end;
-  margin-top: -50px;
 }
 
 .blog-posts {
