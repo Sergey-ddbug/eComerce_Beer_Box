@@ -15,13 +15,13 @@
 ::-moz-selection {
   background: #2d2f36;
 }
-body {
+.wrapper {
   background: white;
   font-family: "Inter UI", sans-serif;
   margin: 0;
   padding: 20px;
 }
-.page {
+.page.login-page {
   background: #e2e2e5;
   display: flex;
   flex-direction: column;
@@ -31,20 +31,20 @@ body {
   width: calc(100% - 40px);
 }
 @media (max-width: 767px) {
-  .page {
+  .page.login-page {
     height: auto;
     margin-bottom: 20px;
     padding-bottom: 20px;
   }
 }
-.container {
+.login-page > .container {
   display: flex;
   height: 320px;
   margin: 0 auto;
   width: 640px;
 }
 @media (max-width: 767px) {
-  .container {
+  .login-page > .container {
     flex-direction: column;
     height: 630px;
     width: 320px;
@@ -91,7 +91,7 @@ body {
     max-height: 350px;
   }
 }
-svg {
+svg.login-svg {
   position: absolute;
   width: 320px;
 }
@@ -101,11 +101,11 @@ path {
   stroke-width: 4;
   stroke-dasharray: 240 1386;
 }
-.form {
+.form.login-page-form {
   margin: 40px;
   position: absolute;
 }
-label {
+.login-page label {
   color: #c2c2c5;
   display: block;
   font-size: 14px;
@@ -113,7 +113,7 @@ label {
   margin-top: 20px;
   margin-bottom: 5px;
 }
-input {
+.login-page input {
   background: transparent;
   border: 0;
   color: #f2f2f2;
@@ -123,17 +123,17 @@ input {
   outline: none !important;
   width: 100%;
 }
-input::-moz-focus-inner {
+.login-page input::-moz-focus-inner {
   border: 0;
 }
-#submit {
+.login-page #submit {
   color: #707075;
   margin-top: 40px;
   transition: color 300ms;
 }
-#submit:focus {
+.login-page #submit:focus {
   color: #f2f2f2;
 }
-#submit:active {
+.login-page #submit:active {
   color: #d0d0d2;
 }
