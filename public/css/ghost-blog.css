@@ -87,6 +87,10 @@ div {
   padding: 1.5rem;
 }
 
+#customPage {
+  background: #191b1f
+}
+
 .blog-posts .post img {
   border-radius: 6px;
 }

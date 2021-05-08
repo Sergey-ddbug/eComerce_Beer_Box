@@ -41,6 +41,10 @@
     color: var(--light);
   }
   
+  #customPage {
+    background-color: #182c23;
+  }
+
   nav {
     display: flex;
     background-color: var(--secondary);
