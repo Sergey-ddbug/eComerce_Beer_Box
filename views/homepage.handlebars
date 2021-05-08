@@ -1,4 +1,4 @@
-
+{{log logged_in}}
 <section class="hero is-medium" style="background-image:
     url(./pic/beers.jpg);">
     <div class="hero-head">
@@ -7,7 +7,7 @@
             <div class="container">
                 <div class="navbar-brand">
                     <a class="navbar-item">
-                        <img src="https://bulma.io/images/bulma-type-white.png"
+                        <img src="./pic/Logo.jpg"
                             alt="Logo">
                     </a>
                     <span class="navbar-burger" data-target="navbarMenuHeroA">
@@ -18,29 +18,36 @@
                 </div>
                 <div id="navbarMenuHeroA" class="navbar-menu">
                     <div class="navbar-end">
-                        {{#if logged_in}}
                         <a class="navbar-item is-active">
                             Home
                         </a>
-                        {{else}}
+                        {{#if logged_in}}
+                        <a class="navbar-item">
+                            Inventory
+                        </a>
                         <a class="navbar-item is-active">
-                            else
+                            Subscriptions
                         </a>
-                        {{/if}}
-                        <a class="navbar-item">
-                            Examples
-                        </a>
-                        <a class="navbar-item">
-                            Documentation
-                        </a>
-                        <span class="navbar-item">
-                            <a class="button is-primary is-inverted">
+                        <span id="logoutSpan" class="navbar-item">
+                            <a class="button is-primary
+                                is-inverted">
                                 <span class="icon">
                                     <i class="fab fa-github"></i>
                                 </span>
-                                <span>LogIn</span>
+                                <span>LogOut</span>
                             </a>
                         </span>
+                        {{else}}
+                        <span class="navbar-item">
+                            <a href="/login" class="button is-primary
+                                is-inverted">
+                                <span class="icon">
+                                    <i class="fab fa-github"></i>
+                                </span>
+                                <span id="login-btn">LogIn</span>
+                            </a>
+                        </span>
+                        {{/if}}
                     </div>
                 </div>
             </div>
@@ -232,3 +239,5 @@
         </div>
     </div>
 </section>
+
+<script src="/js/home.js"></script>
