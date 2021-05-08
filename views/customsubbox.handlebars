@@ -1,0 +1,12 @@
+{{#each projects as |project|}}
+<div>
+    <p>
+    <div class="control">
+        <label class="radio">
+            <input type="radio" name="beer-choice">
+            {{project.beer}}. {{project.flavor}}.
+        </label>
+    </div>
+    </p>
+</div>
+{{/each}}
