@@ -8,155 +8,180 @@
     <title>YourMonthlyProductPitStop</title>
     <script src="https://kit.fontawesome.com/15181efa86.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
-    <link rel="stylesheet" type="text/css" href="../css/ghost-blog.css">
+    <link rel="stylesheet" type="text/css" href="./public/css/ghost-blog.css">
+    <script src="anime.min.js"></script>
+    <script src="/eComerce_Beer_Box/controllers/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
 </head>
 
-<section class="hero is-medium">
-    <div class="hero-head">
-        <div class="container">
-            <nav class="navbar" role="navigation" aria-label="main navigation">
-
-                <div id="navbarBasicExample" class="navbar-menu">
-                    <div class="navbar-start">
-                        <a class="navbar-item is-active">
-                            Home
-                        </a>
-                        <a class="navbar-item">
-                            Inventory
-                        </a>
-                    </div>
-
-                    <div class="navbar-end">
-                        <div class="navbar-item">
-                            <a href="#">
-                                <i class="fab fa-facebook"></i>
+<body>
+    <section class="hero is-medium">
+        <div class="hero-head">
+            <div class="container">
+                <nav class="navbar" role="navigation" aria-label="main navigation">
+                    <div id="navbarBasicExample" class="navbar-menu">
+                        <div class="navbar-start">
+                            <a class="navbar-item is-active">
+                                Home
                             </a>
-                            <a href="#">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fas fa-rss-square"></i>
+                            <a class="navbar-item">
+                                Inventory
                             </a>
                         </div>
-                    </div>
-                </div>
-            </nav>
+                </nav>
+            </div>
         </div>
-    </div>
-    <div class="hero-body">
-        <div class="container has-text-centered">
-            <img src="" width="700px">
-            <h2 class="subtitle">
-                Your Beer Stop !
-            </h2>
-        </div>
-    </div>
-</section>
-<section class="blog-posts">
-    <div class="container">
-        <div class="columns">
-            <div class="column is-10 is-offset-1">
-                <div class="columns featured-post is-multiline">
-                    <div class="column is-12 post">
-                        <article class="columns featured">
-                            <div class="column is-7 post-img ">
-                                <img src="https://cdn.emk.dev/templates/featured-image.png" alt="">
-                            </div>
-                            <div class="column is-5 featured-content va">
-                                <div>
-                                    <h3 class="heading post-category">Category Name</h3>
-                                    <h1 class="title post-title">Beer Box 19.99$</h1>
-                                    <p class="post-excerpt">This template is based off of the official default blog
-                                        template created by the fine folks over at <a href="https://ghost.io">Ghost</a>.
-                                        If you are looking for a fully featured blog platform, I highly recommend
-                                        checking them out!</p>
-                                    <br>
-                                    <a href="#" class="button is-primary">Read More</a>
-                                </div>
-
-                            </div>
-                        </article>
-                    </div>
-                </div>
-                <hr>
-                <div class="columns is-multiline">
-                    <div class="column post is-6">
-                        <article class="columns is-multiline">
-                            <div class="column is-12 post-img">
-                                <img src="https://cdn.emk.dev/templates/post-img.png" alt="Featured Image">
-                            </div>
-                            <div class="column is-12 featured-content ">
-                                <h3 class="heading post-category">Category Name</h3>
-                                <h1 class="title post-title">Beer Box 29.99$</h1>
-                                <p class="post-excerpt">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                    Accusamus ratione harum eaque, animi nulla tempore quis, quam voluptatum.</p>
-                                <br>
-                                <a href="#" class="button is-primary">Subscribe</a>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="column post is-6">
-                        <article class="columns is-multiline">
-                            <div class="column is-12 post-img">
-                                <img src="https://cdn.emk.dev/templates/post-img.png" alt="Featured Image">
-                            </div>
-                            <div class="column is-12 featured-content ">
-                                <h3 class="heading post-category">Category Name</h3>
-                                <h1 class="title post-title">Shit Load of Beer 99.99$</h1>
-                                <p class="post-excerpt">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                    Accusamus ratione harum eaque, animi nulla tempore quis, quam voluptatum.</p>
-                                <br>
-                                <a href="#" class="button is-primary">Subscribe</a>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="column post is-4">
-                        <article class="columns is-multiline">
-                            <div class="column is-12 post-img">
-                                <img src="https://cdn.emk.dev/templates/post-img.png" alt="Featured Image">
-                            </div>
-                            <div class="column is-12 featured-content ">
-                                <h3 class="heading post-category">Category Name</h3>
-                                <h1 class="title post-title">Slightly Longer Blog Post Title</h1>
-                                <p class="post-excerpt">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                    Accusamus ratione harum eaque, animi nulla tempore quis, quam voluptatum.</p>
-                                <br>
-                                <a href="#" class="button is-primary">Subscribe</a>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="column post is-4">
-                        <article class="columns is-multiline">
-                            <div class="column is-12 post-img">
-                                <img src="https://cdn.emk.dev/templates/post-img.png" alt="Featured Image">
-                            </div>
-                            <div class="column is-12 featured-content ">
-                                <h3 class="heading post-category">Category Name</h3>
-                                <h1 class="title post-title">Chose Your own</h1>
-                                <p class="post-excerpt">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                    Accusamus ratione harum eaque, animi nulla tempore quis, quam voluptatum.</p>
-                                <br>
-                                <a href="#" class="button is-primary">Subscribe</a>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="column post is-4">
-                        <article class="columns is-multiline">
-                            <div class="column is-12 post-img">
-                                <img src="https://cdn.emk.dev/templates/post-img.png" alt="Featured Image">
-                            </div>
-                            <div class="column is-12 featured-content ">
-                                <h3 class="heading post-category">Category Name</h3>
-                                <h1 class="title post-title">Slightly Longer Blog Post Title</h1>
-                                <p class="post-excerpt">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                    Accusamus ratione harum eaque, animi nulla tempore quis, quam voluptatum.</p>
-                                <br>
-                                <a href="#" class="button is-primary">Read More</a>
-                            </div>
-                        </article>
-                    </div>
+        <div class="navbar-end">
+            <div class="navbar-item column">
+                <div class="buttons">
+                    <a class="button has-background-grey has-text-success-light">
+                        <strong>Sign up</strong>
+                    </a>
+                    <a href="/eComerce_Beer_Box/login.html" class="button is-light has-background-grey">
+                        Log in
+                    </a>
                 </div>
             </div>
         </div>
+        <div class="hero-body">
+            <div class="column has-text-centered">
+                <img src="" width="700px">
+                <h1>
+                    <span class="letter">Y</span>
+                    <span class="letter">O</span>
+                    <span class="letter">U</span>
+                    <span class="letter">R</span>
+                    <div id="space">asdasdasasdasda
+                    </div>
+                    <span class="letter">B</span>
+                    <span class="letter">E</span>
+                    <span class="letter">E</span>
+                    <span class="letter">R</span>
+                    <div id="space">asdasdasasdasda
+                    </div>
+                    <span class="letter">S</span>
+                    <span class="letter">T</span>
+                    <span class="letter">O</span>
+                    <span class="letter">P</span>
+                    <span class="letter">!</span>
+                </h1>
 
-</section>
+
+
+            </div>
+        </div>
+    </section>
+    <section class="blog-posts">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-10 is-offset-1">
+                    <div class="columns featured-post is-multiline">
+                        <div class="column is-12 post">
+                            <article class="columns featured">
+                                <div class="column is-7 post-img ">
+                                    <img src="./public/pic/Beer-Sampler-Gift-Select_large.jpg" alt="">
+                                </div>
+                                <div class="column is-5 featured-content va">
+                                    <div>
+                                        <h3 class="heading post-category">Category Name</h3>
+                                        <span class="beer">
+                                            <h1 class="title post-title">Beer Box 49.99$</h1>
+                                        </span>
+                                        <p class="post-excerpt">When it comes to microbrews, there are so many good
+                                            beers out there that it’s hard to pick just one. So don’t pick one. Pick
+                                            six! With our Beer Sampler Gift Select gift basket, you will get six
+                                            microbrews. On top of these fantastic beers, you’ll also get delicious
+                                            snacks to enjoy with your Beer Sampler Gift Select gift basket!
+
+                                            *Beer glasses not included.</p>
+                                        <br>
+                                        <a href="#" class="button has-background-grey has-text-success-light">Read
+                                            More</a>
+                                    </div>
+
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="columns is-multiline">
+                        <div class="column post is-6">
+                            <article class="columns is-multiline">
+                                <div class="column is-12 post-img">
+                                    <img src="./public/pic/Microbrew-Beer-Bucket-Gift-Basket-3-Beers_large.jpg"
+                                        alt="Featured Image">
+                                </div>
+                                <div class="column is-12 featured-content ">
+                                    <h3 class="heading post-category">Category Name</h3>
+                                    <h1 class="title post-title">Beer Box 29.99$</h1>
+                                    <p class="post-excerpt">Created in small batches to achieve distinct, complex
+                                        flavors, delicious microbrews have gained quite a following. And since we're
+                                        crazy about unique tastes (as well as beer) we decided our gift basket
+                                        collection couldn't possibly be complete without a bucket of our favorite craft
+                                        brews. In our Microbrew Beer Bucket - 3 Beers gift, we've united some of our
+                                        favorite microbrews that are local to our area, along with one from across the
+                                        country, and paired them with an assortment of carefully chosen gourmet snacks,
+                                        creating a special gift that is sure to be appreciated!
+
+                                        *Beer glasses not included.</p>
+                                    <br>
+                                    <a href="#" class="button has-background-grey has-text-success-light">Subscribe</a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="column post is-6">
+                            <article class="columns is-multiline">
+                                <div class="column is-12 post-img">
+                                    <img src="./public/pic/Twelve-Beer-Bucket-Gift-Basket_large.jpg"
+                                        alt="Featured Image">
+                                </div>
+                                <div class="column is-12 featured-content ">
+                                    <h3 class="heading post-category">Category Name</h3>
+                                    <h1 class="title post-title">Shit Load of Beer 99.99$</h1>
+                                    <p class="post-excerpt">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                        Accusamus ratione harum eaque, animi nulla tempore quis, quam voluptatum.</p>
+                                    <br>
+                                    <a href="#" class="button has-background-grey has-text-success-light">Subscribe</a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="column post is-4">
+                            <article class="columns is-multiline">
+                                <div class="column is-12 post-img">
+                                    <img src="https://cdn.emk.dev/templates/post-img.png" alt="Featured Image">
+                                </div>
+                                <div class="column is-12 featured-content ">
+                                    <h3 class="heading post-category">Category Name</h3>
+                                    <h1 class="title post-title">Slightly Longer Blog Post Title</h1>
+                                    <p class="post-excerpt">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                        Accusamus ratione harum eaque, animi nulla tempore quis, quam voluptatum.</p>
+                                    <br>
+                                    <a href="#" class="button has-background-grey has-text-success-light">Subscribe</a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="column post is-4">
+                            <article class="columns is-multiline">
+                                <div class="column is-12 post-img">
+                                    <img src="https://cdn.emk.dev/templates/post-img.png" alt="Featured Image">
+                                </div>
+                                <div class="column is-12 featured-content ">
+                                    <h3 class="heading post-category">Category Name</h3>
+                                    <h1 class="title post-title">Chose Your own</h1>
+                                    <p class="post-excerpt">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                        Accusamus ratione harum eaque, animi nulla tempore quis, quam voluptatum.</p>
+                                    <br>
+                                    <a href="#" class="button has-background-grey has-text-success-light">Subscribe</a>
+                                </div>
+                            </article>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+    </section>
+    <script src="./public/js/animation.js"></script>
+</body>
+
+</html>
