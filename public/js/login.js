@@ -31,30 +31,29 @@ document.querySelector("#password").addEventListener("focus", function (e) {
     },
   });
 });
-document.querySelector("#submit").addEventListener("focus", function (e) {
-  if (current) current.pause();
-  current = anime({
-    targets: "path",
-    strokeDashoffset: {
-      value: -730,
-      duration: 700,
-      easing: "easeOutQuart",
-    },
-    strokeDasharray: {
-      value: "530 1386",
-      duration: 700,
-      easing: "easeOutQuart",
-    },
-  });
-});
+// document.querySelector("#submit").addEventListener("focus", function (e) {
+//   if (current) current.pause();
+//   current = anime({
+//     targets: "path",
+//     strokeDashoffset: {
+//       value: -730,
+//       duration: 700,
+//       easing: "easeOutQuart",
+//     },
+//     strokeDasharray: {
+//       value: "530 1386",
+//       duration: 700,
+//       easing: "easeOutQuart",
+//     },
+//   });
+// });
 
 const loginFormHandler = async (event) => {
   event.preventDefault();
-
   // Collect values from the login form
   const email = document.querySelector("#email").value.trim();
   const password = document.querySelector("#password").value.trim();
-
+  console.log(email, password);
   if (email && password) {
     // Send a POST request to the API endpoint
     const response = await fetch("/api/users/login", {
@@ -71,8 +70,8 @@ const loginFormHandler = async (event) => {
       alert(response.statusText);
     }
   }
-  document.querySelector(".form").addEventListener("#submit", loginFormHandler);
 };
+document.querySelector("#input-submit").addEventListener("click", loginFormHandler);
 // $(document).ready(function () {
 //   let signupFormHandler = async (event) => {
 //     event.preventDefault();
