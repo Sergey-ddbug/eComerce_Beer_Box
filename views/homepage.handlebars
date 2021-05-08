@@ -22,7 +22,7 @@
                                         of Large German pretzels.
                                         *Beer glasses not included.</p>
                                     <br>
-                                    <a href="#" class="button
+                                    <a id="hefeweizen" class="button
                                         has-background-grey
                                         has-text-success-light">Subscribe</a>
                                 </div>
@@ -50,7 +50,7 @@
 
                                     *Beer glasses not included.</p>
                                 <br>
-                                <a href="#" class="button
+                                <a id="strong-mans-stout" class="button
                                     has-background-grey
                                     has-text-success-light">Subscribe</a>
                             </div>
@@ -73,7 +73,7 @@
                                     notes. The IPA box also comes with a Nucleated
                                     Speigelau glass and an at home Pizza recipe.</p>
                                 <br>
-                                <a href="#" class="button
+                                <a id="another-ipa" class="button
                                     has-background-grey
                                     has-text-success-light">Subscribe</a>
                             </div>
@@ -114,7 +114,7 @@
                                     This Box comes with a pair of British Style Imperial Pint Glasses and a 10% off
                                     discount card to Bad Daddys Burger Bar.</p>
                                 <br>
-                                <a href="#" class="button
+                                <a id="aielmans" class="button
                                     has-background-grey
                                     has-text-success-light">Subscribe</a>
                             </div>
@@ -122,23 +122,30 @@
                     </div>
 
                 </div>
-            </div>
-        </div>
-    </div>
-    {{#if projects.length}}
-    <div class="col-md-6 project-list">
-        <h3>Current boxes:</h3>
+                <div class="columns is-multiline">
+                    <div class="column is-12">
+                        <h1 class="title post-title ml-4">Your Orders</h1>
+                    </div>
 
-        {{#each projects as |project|}}
-        <div class="row mb-2">
-            <div class="col-md-8">
-                <h4><a href="/project/{{project.id}}">{{project.box_name}}</a></h4>
+                    {{#each subData}}
+                    <div class="column post is-4">
+                        <article class="columns is-multiline">
+                            <div class="column is-12 post-img">
+                                <img src="./pic/Microbrew-Beer-Bucket-Gift-Basket-3-Beers_large.jpg"
+                                    alt="Featured Image">
+                            </div>
+                            <div class="column is-12 featured-content">
+                                <h1 class="title post-title">{{box_name}}</h1>
+                                <p class="post-excerpt">{{beer_names}}</p>
+                            </div>
+                        </article>
+                    </div>
+                    {{/each}}
+                </div>
             </div>
         </div>
-        {{/each}}
     </div>
-    {{/if}}
-    </div>
+
 
 </section>
 
