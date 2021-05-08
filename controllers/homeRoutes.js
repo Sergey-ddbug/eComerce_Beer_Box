@@ -4,21 +4,29 @@ const withAuth = require("../utils/auth");
 
 router.get("/", async (req, res) => {
   try {
-
-    const subData = await Sub.findAll({
-      where: {
-        user_id: req.session.user_id
-      },
-      raw: true
-    })
-
-
-    // Pass serialized data and session flag into template
+    console.log("hit")
+    if (req.session.user_id) {
+      const subData = await Sub.findAll({
+        where: {
+          user_id: req.session.user_id
+        },
+        raw: true
+      })
+      console.log(subData)
+      res.render("homepage", {
+        //   projects,
+        subData,
+        logged_in: req.session.logged_in,
+      });
+      return
+    }
+    
     res.render("homepage", {
       //   projects,
-      subData,
-      logged_in: req.session.logged_in,
+      logged_in: false,
     });
+
+
   } catch (err) {
     res.status(500).json(err);
   }
