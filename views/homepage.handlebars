@@ -1,4 +1,4 @@
-
+{{log logged_in}}
 <section class="hero is-medium" style="background-image:
     url(./pic/beers.jpg);">
     <div class="hero-head">
@@ -18,6 +18,9 @@
                 </div>
                 <div id="navbarMenuHeroA" class="navbar-menu">
                     <div class="navbar-end">
+                        <a class="navbar-item is-active">
+                            Home
+                        </a>
                         {{#if logged_in}}
                         <a class="navbar-item">
                             Inventory
@@ -25,8 +28,9 @@
                         <a class="navbar-item is-active">
                             Subscriptions
                         </a>
-                        <span class="navbar-item">
-                            <a class="button is-primary is-inverted">
+                        <span id="logoutSpan" class="navbar-item">
+                            <a class="button is-primary
+                                is-inverted">
                                 <span class="icon">
                                     <i class="fab fa-github"></i>
                                 </span>
@@ -34,13 +38,6 @@
                             </a>
                         </span>
                         {{else}}
-                        <a class="navbar-item is-active">
-                            Home
-                        </a>
-                        {{/if}}
-                        <a class="navbar-item">
-                            Inventory
-                        </a>
                         <span class="navbar-item">
                             <a href="/login" class="button is-primary
                                 is-inverted">
@@ -50,6 +47,7 @@
                                 <span id="login-btn">LogIn</span>
                             </a>
                         </span>
+                        {{/if}}
                     </div>
                 </div>
             </div>
@@ -241,3 +239,5 @@
         </div>
     </div>
 </section>
+
+<script src="/js/home.js"></script>

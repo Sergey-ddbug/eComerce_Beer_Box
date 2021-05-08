@@ -1,0 +1,88 @@
+
+<form action="/" method="POST" class="columns is-tablet">
+    <div class="column is-one-quarter"></div>
+    <div class="column custom-color">
+        <div class="field">
+            <label class="label">Username</label>
+            <div class="form-group">
+                <div class="control">
+                    <input id="name-signup" class="input" type="text"
+                        name="name"
+                        placeholder="Username">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-user"></i>
+                    </span>
+                    <span class="icon is-small is-right">
+                        <i class="fas fa-check"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="field">
+            <label class="label">Email</label>
+            <div class="control">
+                <input id="email-signup" class="input" type="email" name="email"
+                    placeholder="Email">
+                <span class="icon is-small is-left">
+                    <i class="fas fa-envelope"></i>
+                </span>
+                <span class="icon is-small is-right">
+                    <i class="fas fa-exclamation-triangle"></i>
+                </span>
+            </div>
+        </div>
+        <div class="field">
+            <label class="label">Password</label>
+            <div class="control">
+                <input id="password-signup-1" class="input" type="password"
+                    name="password"
+                    placeholder="Password">
+                <span class="icon is-small is-left">
+                    <i class="fas fa-envelope"></i>
+                </span>
+                <span class="icon is-small is-right">
+                    <i class="fas fa-exclamation-triangle"></i>
+                </span>
+            </div>
+        </div>
+        <div class="field">
+            <label class="label">Confirm Password</label>
+            <div class="control">
+                <input id="password-signup-2" class="input" type="password"
+                    placeholder="Confirm
+                    Password">
+                <span class="icon is-small is-left">
+                    <i class="fas fa-envelope"></i>
+                </span>
+                <span class="icon is-small is-right">
+                    <i class="fas fa-exclamation-triangle"></i>
+                </span>
+            </div>
+        </div>
+
+        <label class="label"></label>
+        <div class="control">
+            <label class="radio">
+                <input id="signup-age" type="checkbox" name="answer">
+                I Am Over 21
+            </label>
+        </div>
+        <div class="field pt-3">
+            <div class="control">
+                <label class="checkbox">
+                    <input id="terms-and-conditions" type="checkbox">
+                    I agree to the <a href="/terms">terms and conditions</a>
+                </label>
+            </div>
+        </div>
+        <div class="field is-grouped pt-5">
+            <div class="control">
+                <button type="submit" class="button submit">Register</button>
+            </div>
+        </div>
+    </div>
+    <div class="column is-one-quarter"></div>
+</form>
+
+<link rel="stylesheet" href="/css/signup.css">
+<script src="/js/signup.js"></script>

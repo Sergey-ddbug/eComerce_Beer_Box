@@ -4,8 +4,8 @@ const session = require("express-session");
 const exphbs = require("express-handlebars");
 const routes = require("./controllers");
 const helpers = require("./utils/helpers");
-
 const sequelize = require("./config/connection");
+const bodyParser = require("body-parser");
 const SequelizeStore = require("connect-session-sequelize")(session.Store);
 
 const app = express();
@@ -35,10 +35,13 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, "public")));
 app.set("views", path.join(__dirname, "/views"));
 app.set("view engine", "handlebars");
+app.use(bodyParser.urlencoded({ extended: true }));
 app.get("/login", (req, res) => {
   res.render("login");
 });
-// app.use();
+app.get("/signup", (req, res) => {
+  res.render("signup");
+});
 
 app.use(routes);
 

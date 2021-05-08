@@ -1,0 +1,39 @@
+/* body {
+  margin: 0;
+  font-family: "Nunito Sans";
+} */
+
+.field:not(:last-child) {
+  margin-bottom: 0px;
+}
+
+.columns {
+  margin: 20px !important;
+}
+
+.custom-color {
+  background: linear-gradient(25deg, #786fa6 70%, #2c2c54 60%);
+  padding: 35px;
+  border-radius: 4px;
+}
+
+label,
+a {
+  color: #fff !important;
+}
+
+a {
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+.submit {
+  background-color: #574b90;
+  color: #fff;
+  border: 0px;
+}
+
+.submit:hover {
+  background-color: #303952;
+  color: #fff;
+}
