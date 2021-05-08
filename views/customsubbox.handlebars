@@ -1,8 +1,35 @@
-<div class="row mt-4">
-    <div class="col-md-6">
-        <h3>Create a New Beer Box:</h3>
+<div id="customPage" class="columns">
+    <div class="column is-4 is-offset-4">
+        <div class="column is-12">
+            <div class="field">
+                <label class="label has-text-danger">Create a New Beer Box:</label>
+            </div>
 
-        <form class="form new-beer-form">
+        </div>
+        <div class="column is-12">
+            <div class="field">
+                <label class="label has-text-light">Box Name</label>
+                <div class="control">
+                    <input id="box-name" class="input" type="text">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="column is-12">
+            <div class="field">
+                <label class="label has-text-light">Type your beers here:</label>
+                <div class="control">
+                    <textarea class="textarea" id="beer-names"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="column is-12">
+            <button id="new-beer-form" type="submit" class="button is-danger">Submit</button>
+        </div>
+
+        {{!-- <form class="form new-beer-form">
             <div class="form-group">
                 <label for="box-name">Box name:</label>
                 <input class="form-input" type="text" id="box-name" name="project-name" />
@@ -11,10 +38,7 @@
                 <label for="beer-names">Type your beers here:</label>
                 <textarea class="form-input" id="beer-names" name="project-desc"></textarea>
             </div>
-            <div class="form-group">
-                <button type="submit" class="btn btn-primary">Subscribe</button>
-            </div>
-        </form>
+        </form> --}}
     </div>
 </div>
 <script src="./js/customsubbox.js"></script>

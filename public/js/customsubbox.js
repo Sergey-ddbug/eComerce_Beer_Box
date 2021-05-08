@@ -23,5 +23,5 @@ const newFormHandler = async (event) => {
 };
 
 document
-    .querySelector('.new-beer-form')
-    .addEventListener('submit', newFormHandler);
+    .querySelector('#new-beer-form')
+    .addEventListener('click', newFormHandler);
