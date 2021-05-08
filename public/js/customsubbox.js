@@ -1,21 +1,21 @@
 const newFormHandler = async (event) => {
     event.preventDefault();
 
-    const boxname = document.querySelector('#beer-choice').value.trim();
-    const beernames = document.querySelector('#beer-desc').value.trim();
+    const box_name = document.querySelector('#box-name').value.trim();
+    const beer_names = document.querySelector('#beer-names').value.trim();
 
 
-    if (boxname && beernames) {
-        const response = await fetch(`/api/projects`, {
+    if (box_name && beer_names) {
+        const response = await fetch(`/api/sub`, {
             method: 'POST',
-            body: JSON.stringify({ boxname, beernames }),
+            body: JSON.stringify({ box_name, beer_names }),
             headers: {
                 'Content-Type': 'application/json',
             },
         });
 
         if (response.ok) {
-            document.location.replace('/customsubbox');
+            document.location.replace('/');
         } else {
             alert('Failed to create beer box');
         }

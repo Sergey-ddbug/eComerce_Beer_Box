@@ -14,6 +14,88 @@
 </head>
 
 <body>
+    <section class="hero is-medium" style="background-image:
+    url(./pic/beers.jpg);">
+        <div class="hero-head">
+
+            <nav class="navbar">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <a class="navbar-item">
+                            <img src="./pic/Logo.jpg" alt="Logo">
+                        </a>
+                        <span class="navbar-burger" data-target="navbarMenuHeroA">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </div>
+                    <div id="navbarMenuHeroA" class="navbar-menu">
+                        <div class="navbar-end">
+                            <a href="/" class="navbar-item is-active">
+                                Home
+                            </a>
+                            {{#if logged_in}}
+                            <a class="navbar-item">
+                                Inventory
+                            </a>
+                            <a class="navbar-item is-active">
+                                Subscriptions
+                            </a>
+                            <span id="logoutSpan" class="navbar-item">
+                                <a class="button is-primary
+                                is-inverted">
+                                    <span class="icon">
+                                        <i class="fab fa-github"></i>
+                                    </span>
+                                    <span>LogOut</span>
+                                </a>
+                            </span>
+                            {{else}}
+                            <span class="navbar-item">
+                                <a href="/login" class="button is-primary
+                                is-inverted">
+                                    <span class="icon">
+                                        <i class="fab fa-github"></i>
+                                    </span>
+                                    <span id="login-btn">LogIn</span>
+                                </a>
+                            </span>
+                            {{/if}}
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="hero-body">
+            <div class="column has-text-centered">
+
+                <h1>
+                    <span class="letter">Y</span>
+                    <span class="letter">O</span>
+                    <span class="letter">U</span>
+                    <span class="letter">R</span>
+                    <div id="space">.............
+                    </div>
+                    <span class="letter">B</span>
+                    <span class="letter">E</span>
+                    <span class="letter">E</span>
+                    <span class="letter">R</span>
+                    <div id="space">.............
+                    </div>
+                    <span class="letter">S</span>
+                    <span class="letter">T</span>
+                    <span class="letter">O</span>
+                    <span class="letter">P</span>
+                    <span class="letter">!</span>
+                </h1>
+
+
+
+            </div>
+        </div>
+    </section>
+
     {{{ body }}}
 
     <script src="/js/index.js"></script>

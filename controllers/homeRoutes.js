@@ -67,4 +67,11 @@ router.get("/login", (req, res) => {
   res.render("loginmain");
 });
 
+router.get("/subscribe", withAuth, (req, res) => {
+  // const subbox = document.querySelector("#custom-sub-box");
+  res.render("customsubbox", {
+    logged_in: true,
+  });
+});
+
 module.exports = router;
