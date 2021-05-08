@@ -1,12 +1,14 @@
-{{#each projects as |project|}}
-<div>
-    <p>
-    <div class="control">
-        <label class="radio">
-            <input type="radio" name="beer-choice">
-            {{project.beer}}. {{project.flavor}}.
-        </label>
+<div class="row mt-4">
+    <div class="col-md-6">
+        <h3>Create Custom Box:</h3>
+
+        <form class="form new-beer-form">
+            <div class="form-group">
+                <label for="beer-name">Beer name:</label>
+                <input class="form-input" type="text" id="beer-name-one" name="beer-name-one" />
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+            </div>
+        </form>
     </div>
-    </p>
-</div>
-{{/each}}
