@@ -1,14 +1,14 @@
 const newFormHandler = async (event) => {
     event.preventDefault();
 
-    const beer = document.querySelector('#beer-choice').value.trim();
-    const description = document.querySelector('#beer-desc').value.trim();
+    const boxname = document.querySelector('#beer-choice').value.trim();
+    const beernames = document.querySelector('#beer-desc').value.trim();
 
 
-    if (beer = true) {
+    if (boxname && beernames) {
         const response = await fetch(`/api/projects`, {
             method: 'POST',
-            body: JSON.stringify({ beer }),
+            body: JSON.stringify({ boxname, beernames }),
             headers: {
                 'Content-Type': 'application/json',
             },

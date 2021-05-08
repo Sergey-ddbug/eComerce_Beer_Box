@@ -205,6 +205,22 @@
             </div>
         </div>
     </div>
+    {{#if projects.length}}
+    <div class="col-md-6 project-list">
+        <h3>Current boxes:</h3>
+
+        {{#each projects as |project|}}
+        <div class="row mb-2">
+            <div class="col-md-8">
+                <h4><a href="/project/{{project.id}}">{{project.box_name}}</a></h4>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+    {{/if}}
+    </div>
+
+    <script src="./js/profile.js"></script>
 </section>
 
 <script src="/js/home.js"></script>

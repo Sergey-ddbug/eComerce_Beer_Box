@@ -11,20 +11,17 @@ Project.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    beer: {
+    box_name: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    flavor: {
+    beer_names: {
       type: DataTypes.STRING,
     },
     date_created: {
       type: DataTypes.DATE,
       allowNull: false,
       defaultValue: DataTypes.NOW,
-    },
-    company: {
-      type: DataTypes.STRING,
     },
     user_id: {
       type: DataTypes.INTEGER,
