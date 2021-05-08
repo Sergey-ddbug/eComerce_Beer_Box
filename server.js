@@ -9,7 +9,7 @@ const bodyParser = require("body-parser");
 const SequelizeStore = require("connect-session-sequelize")(session.Store);
 
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3002;
 
 // Set up Handlebars.js engine with custom helpers
 const hbs = exphbs.create({ helpers });
@@ -37,10 +37,14 @@ app.set("views", path.join(__dirname, "/views"));
 app.set("view engine", "handlebars");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.get("/login", (req, res) => {
-  res.render("login");
+  res.render("login", {
+    layout: "loginmain.handlebars"
+  });
 });
 app.get("/signup", (req, res) => {
-  res.render("signup");
+  res.render("signup", {
+    layout: "loginmain.handlebars"
+  });
 });
 
 app.use(routes);

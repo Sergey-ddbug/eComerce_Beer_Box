@@ -1,17 +1,76 @@
 [
   {
-    "name": "Session box",
-    "description": "A mobile app that will send you notifications whenever a concert is playing in your area.",
-    "needed_funding": 5000
+    "company": "Sierra Nevada",
+    "beer": "Torpedo",
+    "flavor": "IPA"
   },
   {
-    "name": "The Ultimate Tech Quiz",
-    "description": "A web app that will give users 10 new technical questions each day and track their progress in things like programming, cybersecurity, database architecture, and more!",
-    "needed_funding": 10000
+    "company": "Guinness",
+    "beer": "Draught",
+    "flavor": "Stout"
   },
   {
-    "name": "Roll 'Em Up",
-    "description": "A game for Windows and macOS where players move a ball through a series of increasingly challenging mazes.",
-    "needed_funding": 800
+    "company": "Sycamore Brewing",
+    "beer": "Mountain Candy",
+    "flavor": "IPA"
+  },
+  {
+    "company": "Anheuser-Busch",
+    "beer": "Stella Artois",
+    "flavor": "Pilsner"
+  },
+  {
+    "company": "MillerCoors",
+    "beer": "Blue Moon",
+    "flavor": "Witbier"
+  },
+  {
+    "company": "Anheuser-Busch",
+    "beer": "Johnny Appleseed",
+    "flavor": "Cider"
+  },
+  {
+    "company": "Elysian",
+    "beer": "Space Dust",
+    "flavor": "IPA"
+  },
+  {
+    "company": "Anheuser-Busch",
+    "beer": "Shock Top",
+    "flavor": "Witbier"
+  },
+  {
+    "company": "New Belgium",
+    "beer": "Woodoo Ranger",
+    "flavor": "IPA"
+  },{
+    "company": "The Alchemist",
+    "beer": "Heady Topper",
+    "flavor": "IPA"
+  },
+  {
+    "company": "Cabarrus Brewing Co.",
+    "beer": "Cherry Lemon Sour",
+    "flavor": "Sour"
+  },
+  {
+    "company": "New Sarum Brewing",
+    "beer": "Cheerwine Lager",
+    "flavor": "Lager"
+  },
+  {
+    "company": "Weihenstephaner",
+    "beer": "Hefeweizen",
+    "flavor": "Wheat Ale"
+  },
+  {
+    "company": "Pabst Brewing Company",
+    "beer": "Pabst Blue Ribbon",
+    "flavor": "Lager"
+  },
+  {
+    "company": "Anheuser-Busch",
+    "beer": "Michelob Ultra",
+    "flavor": "Lager"
   }
 ]
